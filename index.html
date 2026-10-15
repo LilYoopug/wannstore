@@ -1,0 +1,1834 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>wannstore — joki game terpercaya | Wuthering Waves &amp; Reverse 1999</title>
+<meta name="description" content="Joki Wuthering Waves &amp; Reverse 1999. Harga transparan, proses cepat, order langsung via WhatsApp. Astrite, build char, explore map, quest, rawkun, riveries.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Bebas+Neue&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;1,6..72,400&display=swap" rel="stylesheet">
+<style>
+/* ============================================================
+   wannstore — Fillmore Handbill
+   Split-fountain ink on newsprint. The bill IS the page.
+   ============================================================ */
+
+:root {
+  --vermilion: #c0321c;
+  --marigold: #f5d64c;
+  --midnight: #1b2a52;
+  --cream: #f3ead8;
+  --cream-deep: #ece0c8;
+  --ink: #1a1208;
+  --ink-soft: #4a3d28;
+  --ink-faint: #665534;
+
+  --font-display: 'Alfa Slab One', Georgia, serif;
+  --font-stencil: 'Bebas Neue', 'Arial Narrow', sans-serif;
+  --font-body: 'Newsreader', Georgia, serif;
+  --font-ui: 'Newsreader', Georgia, serif;
+
+  --rule: 2px solid var(--ink);
+  --rule-thin: 1px solid var(--ink-soft);
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: var(--font-body);
+  background: var(--cream);
+  color: var(--ink);
+  line-height: 1.6;
+  font-size: 17px;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+/* Newsprint ground — flat cream sheet, letterpress does the texturing */
+
+.sheet {
+  position: relative;
+  z-index: 1;
+  max-width: 1200px;
+  margin: 0 auto;
+  background: var(--cream);
+  border-left: 3px solid var(--ink);
+  border-right: 3px solid var(--ink);
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+/* ============================================================
+   BILLING BORDER — identity strip
+   ============================================================ */
+
+.billing-border {
+  background: var(--midnight);
+  color: var(--cream);
+  padding: 10px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px 24px;
+  font-family: var(--font-ui);
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.billing-border .bb-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  white-space: nowrap;
+  flex-shrink: 1;
+  min-width: 0;
+}
+
+.billing-border a {
+  color: var(--cream);
+  text-decoration: none;
+  border-bottom: 1px solid rgba(243,234,216,0.35);
+  padding-bottom: 1px;
+  transition: border-color 0.2s;
+}
+
+.billing-border a:hover { border-color: var(--cream); }
+
+.billing-border .bb-dot {
+  width: 5px; height: 5px;
+  background: var(--vermilion);
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+/* ============================================================
+   HEAD — the bill, pasted on a wall
+   ============================================================ */
+
+.head {
+  position: relative;
+  background: var(--vermilion);
+  padding: clamp(14px, 3vw, 40px);
+  border-bottom: var(--rule);
+}
+
+.head-card {
+  position: relative;
+  background: var(--cream);
+  border: 3px solid var(--ink);
+  box-shadow: 10px 10px 0 rgba(26,18,8,0.28);
+  padding: clamp(22px, 4vw, 56px);
+}
+
+.head-topline {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 12px 24px;
+  flex-wrap: wrap;
+  border-bottom: var(--rule-thin);
+  padding-bottom: 14px;
+  margin-bottom: clamp(14px, 2.2vw, 24px);
+  font-family: var(--font-ui);
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+}
+
+.head-topline .ht-mark {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--ink);
+}
+
+.head-topline .ht-dot {
+  width: 7px; height: 7px;
+  background: var(--vermilion);
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.wordmark {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  margin: 0 0 clamp(4px, 1.2vw, 12px);
+}
+
+.head-lower {
+  display: grid;
+  grid-template-columns: minmax(0, 1.55fr) minmax(0, 1fr);
+  gap: clamp(20px, 4vw, 48px);
+  align-items: stretch;
+}
+
+.head-copy {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.head-hook {
+  font-family: var(--font-body);
+  font-size: clamp(22px, 3.1vw, 44px);
+  font-weight: 600;
+  line-height: 1.16;
+  letter-spacing: -0.01em;
+  color: var(--ink);
+  margin-bottom: 26px;
+  max-width: 15ch;
+}
+
+.head-hook em {
+  font-style: italic;
+  color: var(--vermilion);
+}
+
+.head-actions {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 28px;
+}
+
+.order-ghost {
+  display: inline-flex;
+  align-items: center;
+  font-family: var(--font-stencil);
+  font-size: 20px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--ink);
+  border: 3px solid var(--ink);
+  padding: 14px 28px;
+  transition: background 0.15s, color 0.15s;
+}
+
+.order-ghost {
+  box-shadow: 4px 4px 0 rgba(26,18,8,0.18);
+}
+
+.order-ghost:hover {
+  background: var(--ink);
+  color: var(--cream);
+  box-shadow: 4px 4px 0 var(--ink);
+}
+
+.head-features {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 28px;
+  border-top: var(--rule-thin);
+  padding-top: 18px;
+  font-family: var(--font-ui);
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--ink-soft);
+}
+
+.head-features .hf {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.head-features .hf::before {
+  content: '';
+  width: 6px; height: 6px;
+  background: var(--vermilion);
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.head-poster {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.hp-item {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.head-poster img {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  display: block;
+  border: 3px solid var(--ink);
+  box-shadow: 5px 5px 0 rgba(26,18,8,0.25);
+}
+
+.head-poster .hp-cap {
+  font-family: var(--font-stencil);
+  font-size: 14px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+  margin-top: 6px;
+  text-align: left;
+}
+
+/* ORDER stub button */
+.order-stub {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-family: var(--font-stencil);
+  font-size: 20px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--cream);
+  background: var(--vermilion);
+  border: 3px solid var(--ink);
+  padding: 14px 32px;
+  position: relative;
+  cursor: pointer;
+  transition: transform 0.15s, box-shadow 0.15s;
+  box-shadow: 4px 4px 0 var(--ink);
+}
+
+.order-stub:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 6px 6px 0 var(--ink);
+}
+
+.order-stub:active {
+  transform: translate(2px, 2px);
+  box-shadow: 1px 1px 0 var(--ink);
+}
+
+.order-stub .wa-icon {
+  width: 22px; height: 22px;
+  flex-shrink: 0;
+}
+
+/* ============================================================
+   SECTION HEADERS — bill stamps
+   ============================================================ */
+
+.section-header {
+  padding: 48px 24px 24px;
+  text-align: center;
+  position: relative;
+}
+
+.section-header .game-stamp {
+  display: inline-flex;
+  margin: 0;
+  align-items: center;
+  gap: 12px;
+  background: var(--ink);
+  color: var(--cream);
+  padding: 8px 24px;
+  font-family: var(--font-stencil);
+  font-size: clamp(28px, 5vw, 44px);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  border: 3px solid var(--ink);
+  box-shadow: 4px 4px 0 rgba(26,18,8,0.2);
+}
+
+.section-header .game-stamp img {
+  width: 36px; height: 36px;
+  border-radius: 4px;
+}
+
+.section-header.wu .game-stamp { background: var(--vermilion); }
+.section-header.r1999 .game-stamp { background: var(--midnight); }
+
+.section-sub {
+  font-family: var(--font-ui);
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--ink-faint);
+  margin-top: 12px;
+  letter-spacing: 0.02em;
+}
+
+/* ============================================================
+   PRICE TABLES — billing lines
+   ============================================================ */
+
+.price-section {
+  padding: 0 24px 48px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.price-group {
+  margin-bottom: 40px;
+}
+
+.price-group-title {
+  font-family: var(--font-stencil);
+  font-size: 22px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--ink);
+  border-bottom: var(--rule-thin);
+  padding-bottom: 10px;
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+/* Printer's dingbat roundel — one drawn mark per category */
+.pg-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  flex-shrink: 0;
+  border: 2px solid var(--ink);
+  border-radius: 50%;
+  background: var(--vermilion);
+  color: var(--cream);
+}
+
+.pg-icon svg {
+  width: 20px;
+  height: 20px;
+  display: block;
+}
+
+#reverse-1999 .pg-icon {
+  background: var(--midnight);
+  color: var(--cream);
+}
+
+.price-group-title .pgt-count {
+  font-family: var(--font-ui);
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--ink-faint);
+  letter-spacing: 0.04em;
+  text-transform: none;
+}
+
+.price-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: var(--font-body);
+}
+
+.price-table tr {
+  border-bottom: 1px solid rgba(74,61,40,0.15);
+  transition: background 0.15s;
+  position: relative;
+}
+
+.price-table tr:hover { background: rgba(192,50,28,0.04); }
+
+.price-table tr.circled { background: rgba(192,50,28,0.07); }
+
+.price-table td {
+  padding: 14px 12px;
+  vertical-align: middle;
+}
+
+.price-table .pt-item {
+  font-weight: 600;
+  font-size: 17px;
+  color: var(--ink);
+}
+
+.price-table .pt-item .pt-sub {
+  display: block;
+  font-family: var(--font-ui);
+  font-size: 13px;
+  font-weight: 400;
+  color: var(--ink-faint);
+  margin-top: 2px;
+  letter-spacing: 0.01em;
+}
+
+.price-table .pt-price {
+  font-family: var(--font-stencil);
+  font-size: 22px;
+  letter-spacing: 0.04em;
+  color: var(--vermilion);
+  text-align: right;
+  white-space: nowrap;
+  min-width: 100px;
+}
+
+.price-table .pt-action {
+  text-align: right;
+  min-width: 110px;
+}
+
+/* Pen-circle SVG overlay on hover */
+.pen-circle {
+  position: absolute;
+  inset: -2px -8px;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.25s;
+}
+
+.price-table tr:hover .pen-circle,
+.price-table tr.circled .pen-circle {
+  opacity: 1;
+}
+
+.pen-circle ellipse {
+  fill: none;
+  stroke: var(--vermilion);
+  stroke-width: 2.5;
+  stroke-dasharray: 400;
+  stroke-dashoffset: 400;
+  animation: drawCircle 0.5s ease-out forwards;
+  transform-origin: center;
+}
+
+@keyframes drawCircle {
+  to { stroke-dashoffset: 0; }
+}
+
+.price-table tr.circled .pen-circle ellipse {
+  stroke-dashoffset: 0;
+  animation: none;
+}
+
+/* Small ORDER link in table */
+.pt-order {
+  font-family: var(--font-stencil);
+  font-size: 14px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--ink);
+  border: 2px solid var(--ink);
+  padding: 6px 14px;
+  display: inline-block;
+  transition: all 0.15s;
+  white-space: nowrap;
+  background: transparent;
+}
+
+.pt-order:hover {
+  background: var(--ink);
+  color: var(--cream);
+}
+
+/* ============================================================
+   CUSTOM ORDER banner
+   ============================================================ */
+
+.custom-order {
+  margin: 48px 24px;
+  padding: 32px 24px;
+  background: var(--midnight);
+  color: var(--cream);
+  text-align: center;
+  border: 3px solid var(--ink);
+  position: relative;
+}
+
+.custom-order h3 {
+  font-family: var(--font-stencil);
+  font-size: clamp(24px, 4vw, 36px);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
+.custom-order p {
+  font-family: var(--font-ui);
+  font-size: 17px;
+  opacity: 0.85;
+  margin-bottom: 24px;
+}
+
+.custom-order .order-stub {
+  background: var(--marigold);
+  color: var(--ink);
+  border-color: var(--ink);
+}
+
+/* ============================================================
+   CHARACTER GALLERY — poster stills
+   ============================================================ */
+
+.char-gallery {
+  padding: 0 24px 48px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.char-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 16px;
+}
+
+.gal-title {
+  text-align: center;
+  border-bottom: none;
+  margin-top: 32px;
+  color: var(--ink-faint);
+  font-size: 16px;
+  letter-spacing: 0.12em;
+}
+
+.char-grid img {
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+  display: block;
+  border: 3px solid var(--ink);
+  box-shadow: 3px 3px 0 rgba(26,18,8,0.2);
+  transition: transform 0.2s;
+}
+
+/* Splash variant — square character vignettes, four across on desktop */
+.char-grid-splash {
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 12px;
+}
+
+.char-grid-splash img {
+  aspect-ratio: 1;
+  object-fit: cover;
+}
+
+/* Tall splash art (portrait source) keeps a portrait frame so the whole
+   figure reads — square-covering a 1:2 image decapitates it. */
+.char-grid-tall img {
+  aspect-ratio: 3 / 4;
+  object-fit: contain;
+  background: var(--cream-deep);
+}
+
+.char-grid img:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 5px 5px 0 rgba(26,18,8,0.25);
+}
+
+/* ============================================================
+   CHARACTER CAROUSEL — the revolving drum
+   One big character on a turning stage, auto-advancing like a
+   bill pasted on a rotating barrel. Registration ring behind it.
+   ============================================================ */
+
+.char-carousel {
+  padding: 0 24px 56px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.cc-stage {
+  position: relative;
+  max-width: 620px;
+  margin: 0 auto;
+  perspective: 1600px;
+}
+
+/* Printer's registration ring — turns slowly behind the plate */
+.cc-ring {
+  position: absolute;
+  inset: -34px;
+  z-index: 0;
+  border: 2px dashed rgba(26,18,8,0.22);
+  border-radius: 50%;
+  animation: cc-turn 44s linear infinite;
+  pointer-events: none;
+}
+
+.cc-ring::before,
+.cc-ring::after {
+  content: '';
+  position: absolute;
+  background: var(--vermilion);
+  opacity: 0.5;
+}
+
+.cc-ring::before {
+  top: -3px; left: 50%;
+  width: 6px; height: 6px;
+  margin-left: -3px;
+  border-radius: 50%;
+}
+
+.cc-ring::after {
+  bottom: -3px; left: 50%;
+  width: 6px; height: 6px;
+  margin-left: -3px;
+  border-radius: 50%;
+}
+
+@keyframes cc-turn {
+  to { transform: rotate(360deg); }
+}
+
+.cc-frame {
+  position: relative;
+  z-index: 1;
+  aspect-ratio: 1;
+  border: 4px solid var(--ink);
+  background: var(--cream-deep);
+  box-shadow: 9px 9px 0 rgba(26,18,8,0.28);
+  overflow: hidden;
+  transform-style: preserve-3d;
+}
+
+.cc-slide {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  opacity: 0;
+  transform: rotateY(38deg) scale(0.82);
+  transition:
+    opacity 0.65s cubic-bezier(0.16, 1, 0.3, 1),
+    transform 0.65s cubic-bezier(0.16, 1, 0.3, 1);
+  pointer-events: none;
+  backface-visibility: hidden;
+}
+
+/* Slides behind the active one turn the other way — a real drum */
+.cc-slide.is-behind { transform: rotateY(-38deg) scale(0.82); }
+
+.cc-slide.is-active {
+  opacity: 1;
+  transform: rotateY(0deg) scale(1);
+  pointer-events: auto;
+}
+
+/* Portrait stage — Reverse 1999's splash art is 1:2, so the frame turns
+   taller and the art is contained rather than cropped at head and foot. */
+.cc-stage-tall { max-width: 430px; }
+
+.cc-stage-tall .cc-frame {
+  aspect-ratio: 3 / 4;
+}
+
+.cc-stage-tall .cc-slide {
+  object-fit: contain;
+  background: var(--cream-deep);
+  padding: 0 6px 10px;
+  box-sizing: border-box;
+}
+
+/* Tall stage: the caption drops below the frame as a printed strip, so it
+   never covers the figure's feet. */
+.cc-stage-tall .cc-plate {
+  position: static;
+  border-right: none;
+  border-top: 4px solid var(--ink);
+  width: 100%;
+  box-sizing: border-box;
+  justify-content: flex-start;
+}
+
+/* Caption plate — ink block, stamped onto the frame's foot */
+.cc-plate {
+  position: absolute;
+  z-index: 2;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+  padding: 12px 20px;
+  background: var(--ink);
+  color: var(--cream);
+  border-top: 4px solid var(--ink);
+  border-right: 4px solid var(--ink);
+  max-width: 100%;
+}
+
+.cc-name {
+  font-family: var(--font-stencil);
+  font-size: clamp(24px, 4vw, 36px);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  line-height: 1;
+  white-space: nowrap;
+}
+
+.cc-index {
+  font-family: var(--font-ui);
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  color: var(--marigold);
+  white-space: nowrap;
+}
+
+@media (max-width: 640px) {
+  .char-carousel { padding: 0 12px 44px; }
+
+  .cc-ring { inset: -18px; }
+
+  .cc-plate { padding: 9px 14px; gap: 8px; border-top-width: 3px; border-right-width: 3px; }
+
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cc-ring { animation: none; }
+  .cc-slide { transition: none; }
+}
+
+/* ============================================================
+   FLOATING ORDER STICKER — the pasted-on decal
+   A cut-out sticker stuck to the corner of the sheet. It drifts
+   gently; it leaves with a press and does not come back until the
+   page is reloaded, because a removed bill stays removed.
+   ============================================================ */
+
+.ayo {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  z-index: 60;
+  width: clamp(112px, 15vw, 158px);
+  padding: 0;
+  border: 0;
+  background: none;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  transform-origin: 60% 90%;
+  animation: ayo-drift 4.6s ease-in-out infinite;
+  filter: drop-shadow(0 8px 16px rgba(26,18,8,0.32));
+  transition: transform 0.22s cubic-bezier(0.16, 1, 0.3, 1),
+              filter 0.22s cubic-bezier(0.16, 1, 0.3, 1),
+              opacity 0.3s ease;
+}
+
+@keyframes ayo-drift {
+  0%, 100% { transform: translateY(0) rotate(-2.2deg); }
+  50%      { transform: translateY(-12px) rotate(2.2deg); }
+}
+
+.ayo img {
+  display: block;
+  width: 100%;
+  height: auto;
+  pointer-events: none;
+}
+
+.ayo:hover {
+  animation-play-state: paused;
+  transform: translateY(-6px) scale(1.06) rotate(0deg);
+  filter: drop-shadow(0 12px 22px rgba(26,18,8,0.4));
+}
+
+.ayo:focus-visible {
+  outline: 3px solid var(--midnight);
+  outline-offset: 4px;
+  border-radius: 4px;
+}
+
+/* The X — stuck to the sticker's top-right, appears on hover/focus */
+.ayo-x {
+  position: absolute;
+  top: -4px;
+  right: -4px;
+  width: 20px;
+  height: 20px;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-ui);
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 1;
+  color: var(--ink);
+  background: transparent;
+  border: 1.5px solid rgba(26,18,8,0.55);
+  border-radius: 50%;
+  cursor: pointer;
+  opacity: 0;
+  transform: scale(0.6);
+  transition: opacity 0.18s, transform 0.18s, border-color 0.18s, color 0.18s;
+}
+
+.ayo:hover .ayo-x,
+.ayo:focus-within .ayo-x,
+.ayo-x:focus-visible {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.ayo-x:hover {
+  color: var(--vermilion);
+  border-color: var(--vermilion);
+}
+
+/* Exit animations — press to order, or close */
+.ayo.is-opening {
+  animation: ayo-order-out 0.4s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes ayo-order-out {
+  0%   { opacity: 1; transform: translateY(-6px) scale(1.06); }
+  35%  { opacity: 1; transform: translateY(-10px) scale(1.14); }
+  100% { opacity: 0; transform: translateY(-56px) scale(0.5) rotate(12deg); }
+}
+
+.ayo.is-closing {
+  animation: ayo-close-out 0.34s cubic-bezier(0.4, 0, 1, 1) forwards;
+}
+
+@keyframes ayo-close-out {
+  0%   { opacity: 1; transform: scale(1) rotate(0deg); }
+  100% { opacity: 0; transform: scale(0.55) rotate(-16deg); }
+}
+
+.ayo.is-gone { display: none; }
+
+@media (max-width: 640px) {
+  .ayo { right: 12px; bottom: 12px; width: clamp(96px, 27vw, 124px); }
+  /* Touch has no hover: the X stays visible so the sticker can be dismissed. */
+  .ayo-x { opacity: 1; transform: scale(1); width: 19px; height: 19px; font-size: 13px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ayo { animation: none; }
+  .ayo:hover { transform: none; }
+  .ayo.is-opening,
+  .ayo.is-closing { animation-duration: 0.01s; }
+}
+
+/* ============================================================
+   FOOTER — closing rule
+   ============================================================ */
+
+.footer {
+  border-top: var(--rule);
+  padding: 32px 24px;
+  text-align: center;
+  font-family: var(--font-ui);
+  font-size: 13px;
+  color: var(--ink-faint);
+}
+
+.footer .footer-line {
+  margin-bottom: 8px;
+}
+
+.footer .footer-brand {
+  font-family: var(--font-stencil);
+  font-size: 20px;
+  letter-spacing: 0.08em;
+  color: var(--ink);
+  text-transform: uppercase;
+}
+
+/* ============================================================
+   MOBILE
+   ============================================================ */
+
+@media (max-width: 640px) {
+  body { font-size: 16px; }
+
+  .head { padding: 40px 16px 32px; }
+
+  .billing-border {
+    padding: 8px 12px;
+    font-size: 11px;
+    justify-content: center;
+    gap: 4px 12px;
+  }
+  .billing-border .bb-item { font-size: 11px; }
+
+  .price-section { padding: 0 12px 40px; }
+
+  .price-table td { padding: 10px 6px; }
+
+  .price-table .pt-price { font-size: 18px; min-width: 80px; }
+
+  .price-table .pt-action { min-width: 80px; }
+
+  .pt-order { font-size: 13px; padding: 5px 11px; }
+
+  .head-lower { grid-template-columns: 1fr; gap: 24px; }
+
+  .head-actions { gap: 10px; }
+
+  .order-ghost { font-size: 16px; padding: 12px 22px; }
+
+  .head-poster .hp-cap { text-align: left; }
+
+  .head-features { gap: 6px 18px; font-size: 14px; }
+
+  .char-grid { grid-template-columns: repeat(2, 1fr); gap: 8px; }
+
+  .char-grid-splash { grid-template-columns: repeat(2, 1fr); gap: 8px; }
+
+  .order-stub { font-size: 16px; padding: 12px 24px; }
+
+  .custom-order { margin: 32px 12px; padding: 24px 16px; }
+}
+
+
+/* ============================================================
+   MOTION — the sheet prints itself
+   One authored moment: ink settles onto paper as you read down.
+   Elements are visible by default; JS opts them into the reveal,
+   so no-JS and reduced-motion both ship a fully printed sheet.
+   ============================================================ */
+
+.ink-in {
+  opacity: 0;
+  transform: translateY(14px);
+  filter: blur(4px);
+  transition:
+    opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1),
+    transform 0.7s cubic-bezier(0.16, 1, 0.3, 1),
+    filter 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+  transition-delay: var(--ink-delay, 0ms);
+}
+
+.ink-in.is-printed {
+  opacity: 1;
+  transform: none;
+  filter: blur(0);
+}
+
+/* Table rows cannot take transform; they ink in on opacity alone. */
+tr.ink-in {
+  transform: none;
+  filter: none;
+  transition: opacity 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+  transition-delay: var(--ink-delay, 0ms);
+}
+
+/* The game stamp presses down — same system, registration snap */
+.stamp-press {
+  transform: scale(1.06) translateY(-6px);
+  opacity: 0;
+  transition:
+    opacity 0.5s cubic-bezier(0.16, 1, 0.3, 1),
+    transform 0.5s cubic-bezier(0.16, 1, 0.3, 1),
+    box-shadow 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.stamp-press.is-printed {
+  transform: scale(1) translateY(0);
+  opacity: 1;
+}
+
+/* The wordmark impresses on load — the plate meets paper */
+@keyframes impress {
+  0%   { opacity: 0; transform: translateY(-10px) scale(1.02); filter: blur(6px); }
+  60%  { filter: blur(0); }
+  100% { opacity: 1; transform: none; filter: blur(0); }
+}
+
+.head-card .wordmark {
+  animation: impress 0.9s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ink-in,
+  .stamp-press {
+    opacity: 1 !important;
+    transform: none !important;
+    filter: none !important;
+    transition: none !important;
+  }
+  .head-card .wordmark { animation: none; }
+}
+
+/* A printed sheet is always fully printed. */
+@media print {
+  .ink-in,
+  .stamp-press {
+    opacity: 1 !important;
+    transform: none !important;
+    filter: none !important;
+    transition: none !important;
+  }
+  .head-card .wordmark { animation: none; }
+}
+
+/* ============================================================
+   ACCESSIBILITY
+   ============================================================ */
+
+@media (prefers-reduced-motion: reduce) {
+  .pen-circle ellipse { animation: none; stroke-dashoffset: 0; }
+  .order-stub { transition: none; }
+  .char-grid img { transition: none; }
+}
+
+::selection {
+  background: var(--vermilion);
+  color: var(--cream);
+}
+
+:focus-visible {
+  outline: 3px solid var(--midnight);
+  outline-offset: 2px;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar { width: 10px; }
+::-webkit-scrollbar-track { background: var(--cream-deep); }
+::-webkit-scrollbar-thumb { background: var(--ink-soft); border: 2px solid var(--cream-deep); }
+</style>
+</head>
+<body>
+
+<div class="sheet">
+
+  <!-- ============================================
+       BILLING BORDER — identity strip
+       ============================================ -->
+  <div class="billing-border">
+    <span class="bb-item">
+      <span class="bb-dot"></span>
+      <span>wannstore</span>
+    </span>
+    <span class="bb-item">
+      WhatsApp: <a href="https://wa.me/6289527560809" target="_blank" rel="noopener">+62 895-2756-0809</a>
+    </span>
+    <span class="bb-item">
+      TikTok: <a href="https://tiktok.com/@wannsomeone" target="_blank" rel="noopener">@wannsomeone</a>
+    </span>
+  </div>
+
+  <!-- ============================================
+       HEAD — the bill
+       ============================================ -->
+  <header class="head">
+    <div class="head-card">
+
+      <div class="head-topline">
+        <span class="ht-mark"><span class="ht-dot"></span>wannstore</span>
+        <span>Joki game terpercaya &mdash; sejak 2023</span>
+        <span>Balas cepat &middot; Proses aman</span>
+      </div>
+
+      <!-- Arc-warped display wordmark -->
+      <svg class="wordmark" viewBox="0 0 800 190" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="wannstore">
+        <defs>
+          <path id="arc-top" d="M 55,150 Q 400,15 745,150" fill="none"/>
+        </defs>
+        <text font-family="Alfa Slab One, Georgia, serif" font-size="104" fill="#c0321c" text-anchor="middle">
+          <textPath href="#arc-top" startOffset="50%">wannstore</textPath>
+        </text>
+        <line x1="70" y1="166" x2="730" y2="166" stroke="#1a1208" stroke-width="3"/>
+        <line x1="120" y1="174" x2="680" y2="174" stroke="#1a1208" stroke-width="1"/>
+      </svg>
+
+      <div class="head-lower">
+        <div class="head-copy">
+          <h1 class="head-hook">
+            Mau naik rank, clear map, atau <em>max build</em> tanpa ribet? Serahkan pada kami.
+          </h1>
+
+          <div class="head-actions">
+            <a class="order-stub" href="https://wa.me/6289527560809?text=Halo%20wannstore%2C%20saya%20mau%20pesan%20joki" target="_blank" rel="noopener">
+              <svg class="wa-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347"/></svg>
+              PESAN SEKARANG
+            </a>
+            <a class="order-ghost" href="#wuthering-waves">LIHAT HARGA</a>
+          </div>
+
+          <div class="head-features">
+            <span class="hf">Harga pasti, tanpa nego</span>
+            <span class="hf">2 game &middot; 40+ layanan</span>
+            <span class="hf">Order langsung WhatsApp</span>
+          </div>
+        </div>
+
+        <div class="head-poster">
+          <figure class="hp-item">
+            <img src="assets/wu-cover.webp" alt="Wuthering Waves" loading="eager" decoding="async">
+            <figcaption class="hp-cap">Wuthering Waves</figcaption>
+          </figure>
+          <figure class="hp-item">
+            <img src="assets/r1999-cover.webp" alt="Reverse 1999" loading="eager" decoding="async">
+            <figcaption class="hp-cap">Reverse 1999</figcaption>
+          </figure>
+        </div>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- ============================================
+       WUTHERING WAVES — service bill
+       ============================================ -->
+  <section id="wuthering-waves">
+    <div class="section-header wu">
+      <h2 class="game-stamp">
+        <img src="assets/wu-icon.webp" alt="">
+        Wuthering Waves
+      </h2>
+      <p class="section-sub">Semua harga dalam Rupiah (IDR) — sudah termasuk biaya jasa</p>
+    </div>
+
+    <div class="price-section">
+
+      <!-- Astrite -->
+      <div class="price-group">
+        <h3 class="price-group-title">
+          <span class="pg-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 L14.6 9.4 L22 12 L14.6 14.6 L12 22 L9.4 14.6 L2 12 L9.4 9.4 Z"/></svg></span>
+          Astrite
+          <span class="pgt-count">5 paket</span>
+        </h3>
+        <table class="price-table">
+          <tbody>
+            <tr>
+              <td class="pt-item">1.600 Astrite <span class="pt-sub">Paket starter</span></td>
+              <td class="pt-price">26k</td>
+              <td class="pt-action"><a class="pt-order" href="https://wa.me/6289527560809?text=Halo%20wannstore%2C%20saya%20mau%20pesan%20Astrite%201600%20(26k)" target="_blank" rel="noopener">Pesan</a></td>
+              <svg class="pen-circle" viewBox="0 0 100 100" preserveAspectRatio="none"><ellipse cx="50" cy="50" rx="48" ry="42"/></svg>
+            </tr>
+            <tr>
+              <td class="pt-item">2.200 Astrite <span class="pt-sub">Paket hemat</span></td>
+              <td class="pt-price">32k</td>
+              <td class="pt-action"><a class="pt-order" href="https://wa.me/6289527560809?text=Halo%20wannstore%2C%20saya%20mau%20pesan%20Astrite%202200%20(32k)" target="_blank" rel="noopener">Pesan</a></td>
+              <svg class="pen-circle" viewBox="0 0 100 100" preserveAspectRatio="none"><ellipse cx="50" cy="50" rx="48" ry="42"/></svg>
+            </tr>
+            <tr>
+              <td class="pt-item">3.200 Astrite <span class="pt-sub">Paket populer</span></td>
+              <td class="pt-price">48k</td>
+              <td class="pt-action"><a class="pt-order" href="https://wa.me/6289527560809?text=Halo%20wannstore%2C%20saya%20mau%20pesan%20Astrite%203200%20(48k)" target="_blank" rel="noopener">Pesan</a></td>
+              <svg class="pen-circle" viewBox="0 0 100 100" preserveAspectRatio="none"><ellipse cx="50" cy="50" rx="48" ry="42"/></svg>
+            </tr>
+            <tr>
+              <td class="pt-item">4.800 Astrite <span class="pt-sub">Paket besar</span></td>
+              <td class="pt-price">62k</td>
+              <td class="pt-action"><a class="pt-order" href="https://wa.me/6289527560809?text=Halo%20wannstore%2C%20saya%20mau%20pesan%20Astrite%204800%20(62k)" target="_blank" rel="noopener">Pesan</a></td>
+              <svg class="pen-circle" viewBox="0 0 100 100" preserveAspectRatio="none"><ellipse cx="50" cy="50" rx="48" ry="42"/></svg>
+            </tr>
+            <tr>
+              <td class="pt-item">6.400 Astrite <span class="pt-sub">Paket terbesar</span></td>
+              <td class="pt-price">97k</td>
+              <td class="pt-action"><a class="pt-order" href="https://wa.me/6289527560809?text=Halo%20wannstore%2C%20saya%20mau%20pesan%20Astrite%206400%20(97k)" target="_blank" rel="noopener">Pesan</a></td>
+              <svg class="pen-circle" viewBox="0 0 100 100" preserveAspectRatio="none"><ellipse cx="50" cy="50" rx="48" ry="42"/></svg>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Joki Build Char -->
+      <div class="price-group">
+        <h3 class="price-group-title">
+          <span class="pg-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 3 L6 13 h5 l-1.5 8 L18 11 h-5 z"/></svg></span>
+          Joki Build Character
+          <span class="pgt-count">Forte lvl · Max lvl · Set echo</span>
+        </h3>
+        <table class="price-table">
+          <tbody>
+            <tr>
+              <td class="pt-item">DPS <span class="pt-sub">Max forte, full echo set</span></td>
+              <td class="pt-price">40k</td>
+              <td class="pt-action"><a class="pt-order" href="https://wa.me/6289527560809?text=Halo%20wannstore%2C%20saya%20mau%20pesan%20joki%20build%20char%20DPS%20(40k)" target="_blank" rel="noopener">Pesan</a></td>
+              <svg class="pen-circle" viewBox="0 0 100 100" preserveAspectRatio="none"><ellipse cx="50" cy="50" rx="48" ry="42"/></svg>
+            </tr>
+            <tr>
+              <td class="pt-item">Sub DPS <span class="pt-sub">Max forte, full echo set</span></td>
+              <td class="pt-price">30k</td>
+              <td class="pt-action"><a class="pt-order" href="https://wa.me/6289527560809?text=Halo%20wannstore%2C%20saya%20mau%20pesan%20joki%20build%20char%20Sub%20DPS%20(30k)" target="_blank" rel="noopener">Pesan</a></td>
+              <svg class="pen-circle" viewBox="0 0 100 100" preserveAspectRatio="none"><ellipse cx="50" cy="50" rx="48" ry="42"/></svg>
+            </tr>
+            <tr>
+              <td class="pt-item">Support <span class="pt-sub">Max forte, full echo set</span></td>
+              <td class="pt-price">25k</td>
+              <td class="pt-action"><a class="pt-order" href="https://wa.me/6289527560809?text=Halo%20wannstore%2C%20saya%20mau%20pesan%20joki%20build%20char%20Support%20(25k)" target="_blank" rel="noopener">Pesan</a></td>
+              <svg class="pen-circle" viewBox="0 0 100 100" preserveAspectRatio="none"><ellipse cx="50" cy="50" rx="48" ry="42"/></svg>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Explore Map -->
+      <div class="price-group">
+        <h3 class="price-group-title">
+          <span class="pg-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6 L9 4 L15 6 L21 4 V18 L15 20 L9 18 L3 20 Z"/><path d="M9 4 V18 M15 6 V20"/></svg></span>
+          Explore Map 100%
+          <span class="pgt-count">Tanpa hidden chest &amp; casket terlewat</span>
+        </h3>
+        <table class="price-table">
+          <tbody>
+            <tr>
+              <td class="pt-item">Huanglong</td>
+              <td class="pt-price">250k</td>
+              <td class="pt-action"><a class="pt-order" href="https://wa.me/6289527560809?text=Halo%20wannstore%2C%20saya%20mau%20pesan%20explore%20map%20Huanglong%20(250k)" target="_blank" rel="noopener">Pesan</a></td>
+              <svg class="pen-circle" viewBox="0 0 100 100" preserveAspectRatio="none"><ellipse cx="50" cy="50" rx="48" ry="42"/></svg>
+            </tr>
+            <tr>
+              <td class="pt-item">Blackshore</td>
+              <td class="pt-price">100k</td>
+              <td class="pt-action"><a class="pt-order" href="https://wa.me/6289527560809?text=Halo%20wannstore%2C%20saya%20mau%20pesan%20explore%20map%20Blackshore%20(100k)" target="_blank" rel="noopener">Pesan</a></td>
+              <svg class="pen-circle" viewBox="0 0 100 100" preserveAspectRatio="none"><ellipse cx="50" cy="50" rx="48" ry="42"/></svg>
+            </tr>
+            <tr>
+              <td class="pt-item">Septimont</td>
+              <td class="pt-price">60k</td>
+              <td class="pt-action"><a class="pt-order" href="https://wa.me/6289527560809?text=Halo%20wannstore%2C%20saya%20mau%20pesan%20explore%20map%20Septimont%20(60k)" target="_blank" rel="noopener">Pesan</a></td>
+              <svg class="pen-circle" viewBox="0 0 100 100" preserveAspectRatio="none"><ellipse cx="50" cy="50" rx="48" ry="42"/></svg>
+            </tr>
+            <tr>
+              <td class="pt-item">Ragunna <span class="pt-sub">Termasuk vault underground</span></td>
+              <td class="pt-price">120k</td>
+              <td class="pt-action"><a class="pt-order" href="https://wa.me/6289527560809?text=Halo%20wannstore%2C%20saya%20mau%20pesan%20explore%20map%20Ragunna%20(120k)" target="_blank" rel="noopener">Pesan</a></td>
+              <svg class="pen-circle" viewBox="0 0 100 100" preserveAspectRatio="none"><ellipse cx="50" cy="50" rx="48" ry="42"/></svg>
+            </tr>
+            <tr>
+              <td class="pt-item">Avinoleum &amp; Beohr Waters</td>
+              <td class="pt-price">50k</td>
+              <td class="pt-action"><a class="pt-order" href="https://wa.me/6289527560809?text=Halo%20wannstore%2C%20saya%20mau%20pesan%20explore%20map%20Avinoleum%20dan%20Beohr%20Waters%20(50k)" target="_blank" rel="noopener">Pesan</a></td>
+              <svg class="pen-circle" viewBox="0 0 100 100" preserveAspectRatio="none"><ellipse cx="50" cy="50" rx="48" ry="42"/></svg>
+            </tr>
+            <tr>
+              <td class="pt-item">Sanguis Plateaus</td>
+              <td class="pt-price">40k</td>
+              <td class="pt-action"><a class="pt-order" href="https://wa.me/6289527560809?text=Halo%20wannstore%2C%20saya%20mau%20pesan%20explore%20map%20Sanguis%20Plateaus%20(40k)" target="_blank" rel="noopener">Pesan</a></td>
+              <svg class="pen-circle" viewBox="0 0 100 100" preserveAspectRatio="none"><ellipse cx="50" cy="50" rx="48" ry="42"/></svg>
+            </tr>
+            <tr>
+              <td class="pt-item">Lahai Roi</td>
+              <td class="pt-price">120k</td>
+              <td class="pt-action"><a class="pt-order" href="https://wa.me/6289527560809?text=Halo%20wannstore%2C%20saya%20mau%20pesan%20explore%20map%20Lahai%20Roi%20(120k)" target="_blank" rel="noopener">Pesan</a></td>
+              <svg class="pen-circle" viewBox="0 0 100 100" preserveAspectRatio="none"><ellipse cx="50" cy="50" rx="48" ry="42"/></svg>
+            </tr>
+            <tr>
+              <td class="pt-item">Frostland</td>
+              <td class="pt-price">100k</td>
+              <td class="pt-action"><a class="pt-order" href="https://wa.me/6289527560809?text=Halo%20wannstore%2C%20saya%20mau%20pesan%20explore%20map%20Frostland%20(100k)" target="_blank" rel="noopener">Pesan</a></td>
+              <svg class="pen-circle" viewBox="0 0 100 100" preserveAspectRatio="none"><ellipse cx="50" cy="50" rx="48" ry="42"/></svg>
+            </tr>
+            <tr>
+              <td class="pt-item">Dimmer</td>
+              <td class="pt-price">120k</td>
+              <td class="pt-action"><a class="pt-order" href="https://wa.me/6289527560809?text=Halo%20wannstore%2C%20saya%20mau%20pesan%20explore%20map%20Dimmer%20(120k)" target="_blank" rel="noopener">Pesan</a></td>
+              <svg class="pen-circle" viewBox="0 0 100 100" preserveAspectRatio="none"><ellipse cx="50" cy="50" rx="48" ry="42"/></svg>
+            </tr>
+            <tr>
+              <td class="pt-item">Mengzhou</td>
+              <td class="pt-price">140k</td>
+              <td class="pt-action"><a class="pt-order" href="https://wa.me/6289527560809?text=Halo%20wannstore%2C%20saya%20mau%20pesan%20explore%20map%20Mengzhou%20(140k)" target="_blank" rel="noopener">Pesan</a></td>
+              <svg class="pen-circle" viewBox="0 0 100 100" preserveAspectRatio="none"><ellipse cx="50" cy="50" rx="48" ry="42"/></svg>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Quest -->
+      <div class="price-group">
+        <h3 class="price-group-title">
+          <span class="pg-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3 h9 l5 5 v13 H6 Z"/><path d="M15 3 v5 h5"/><path d="M9 12 h6 M9 16 h6"/></svg></span>
+          Quest
+          <span class="pgt-count">Semua jenis quest</span>
+        </h3>
+        <table class="price-table">
+          <tbody>
+            <tr>
+              <td class="pt-item">Side Quest</td>
+              <td class="pt-price">3k</td>
+              <td class="pt-action"><a class="pt-order" href="https://wa.me/6289527560809?text=Halo%20wannstore%2C%20saya%20mau%20pesan%20joki%20side%20quest%20(3k)" target="_blank" rel="noopener">Pesan</a></td>
+              <svg class="pen-circle" viewBox="0 0 100 100" preserveAspectRatio="none"><ellipse cx="50" cy="50" rx="48" ry="42"/></svg>
+            </tr>
+            <tr>
+              <td class="pt-item">Main Quest</td>
+              <td class="pt-price">15k</td>
+              <td class="pt-action"><a class="pt-order" href="https://wa.me/6289527560809?text=Halo%20wannstore%2C%20saya%20mau%20pesan%20joki%20main%20quest%20(15k)" target="_blank" rel="noopener">Pesan</a></td>
+              <svg class="pen-circle" viewBox="0 0 100 100" preserveAspectRatio="none"><ellipse cx="50" cy="50" rx="48" ry="42"/></svg>
+            </tr>
+            <tr>
+              <td class="pt-item">Exploration Quest</td>
+              <td class="pt-price">12k</td>
+              <td class="pt-action"><a class="pt-order" href="https://wa.me/6289527560809?text=Halo%20wannstore%2C%20saya%20mau%20pesan%20joki%20exploration%20quest%20(12k)" target="_blank" rel="noopener">Pesan</a></td>
+              <svg class="pen-circle" viewBox="0 0 100 100" preserveAspectRatio="none"><ellipse cx="50" cy="50" rx="48" ry="42"/></svg>
+            </tr>
+            <tr>
+              <td class="pt-item">Companion Quest</td>
+              <td class="pt-price">10k</td>
+              <td class="pt-action"><a class="pt-order" href="https://wa.me/6289527560809?text=Halo%20wannstore%2C%20saya%20mau%20pesan%20joki%20companion%20quest%20(10k)" target="_blank" rel="noopener">Pesan</a></td>
+              <svg class="pen-circle" viewBox="0 0 100 100" preserveAspectRatio="none"><ellipse cx="50" cy="50" rx="48" ry="42"/></svg>
+            </tr>
+            <tr>
+              <td class="pt-item">ToA <span class="pt-sub">Tower of Adversity</span></td>
+              <td class="pt-price">25k</td>
+              <td class="pt-action"><a class="pt-order" href="https://wa.me/6289527560809?text=Halo%20wannstore%2C%20saya%20mau%20pesan%20joki%20ToA%20(25k)" target="_blank" rel="noopener">Pesan</a></td>
+              <svg class="pen-circle" viewBox="0 0 100 100" preserveAspectRatio="none"><ellipse cx="50" cy="50" rx="48" ry="42"/></svg>
+            </tr>
+            <tr>
+              <td class="pt-item">Whiwa <span class="pt-sub">Dari level 7</span></td>
+              <td class="pt-price">25k</td>
+              <td class="pt-action"><a class="pt-order" href="https://wa.me/6289527560809?text=Halo%20wannstore%2C%20saya%20mau%20pesan%20joki%20Whiwa%20(25k)" target="_blank" rel="noopener">Pesan</a></td>
+              <svg class="pen-circle" viewBox="0 0 100 100" preserveAspectRatio="none"><ellipse cx="50" cy="50" rx="48" ry="42"/></svg>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Challenge -->
+      <div class="price-group">
+        <h3 class="price-group-title">
+          <span class="pg-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M7 4 h10 v5 a5 5 0 0 1 -10 0 Z"/><path d="M7 5 H4.5 a3 3 0 0 0 3 4"/><path d="M17 5 H19.5 a3 3 0 0 1 -3 4"/><path d="M12 14 v3"/><path d="M9.5 17 h5"/><path d="M8 20 h8"/></svg></span>
+          Challenge
+          <span class="pgt-count">Per stage — harga per masing-masing</span>
+        </h3>
+        <table class="price-table">
+          <tbody>
+            <tr>
+              <td class="pt-item">Void Storm</td>
+              <td class="pt-price">3k<span style="font-size:13px;color:var(--ink-faint)">/ea</span></td>
+              <td class="pt-action"><a class="pt-order" href="https://wa.me/6289527560809?text=Halo%20wannstore%2C%20saya%20mau%20pesan%20joki%20Void%20Storm%20(3k%2Feach)" target="_blank" rel="noopener">Pesan</a></td>
+              <svg class="pen-circle" viewBox="0 0 100 100" preserveAspectRatio="none"><ellipse cx="50" cy="50" rx="48" ry="42"/></svg>
+            </tr>
+            <tr>
+              <td class="pt-item">Dream Patrol</td>
+              <td class="pt-price">3k<span style="font-size:13px;color:var(--ink-faint)">/ea</span></td>
+              <td class="pt-action"><a class="pt-order" href="https://wa.me/6289527560809?text=Halo%20wannstore%2C%20saya%20mau%20pesan%20joki%20Dream%20Patrol%20(3k%2Feach)" target="_blank" rel="noopener">Pesan</a></td>
+              <svg class="pen-circle" viewBox="0 0 100 100" preserveAspectRatio="none"><ellipse cx="50" cy="50" rx="48" ry="42"/></svg>
+            </tr>
+            <tr>
+              <td class="pt-item">Voidmatter Block</td>
+              <td class="pt-price">2k<span style="font-size:13px;color:var(--ink-faint)">/ea</span></td>
+              <td class="pt-action"><a class="pt-order" href="https://wa.me/6289527560809?text=Halo%20wannstore%2C%20saya%20mau%20pesan%20joki%20Voidmatter%20Block%20(2k%2Feach)" target="_blank" rel="noopener">Pesan</a></td>
+              <svg class="pen-circle" viewBox="0 0 100 100" preserveAspectRatio="none"><ellipse cx="50" cy="50" rx="48" ry="42"/></svg>
+            </tr>
+            <tr>
+              <td class="pt-item">Balapan Motor</td>
+              <td class="pt-price">2k<span style="font-size:13px;color:var(--ink-faint)">/ea</span></td>
+              <td class="pt-action"><a class="pt-order" href="https://wa.me/6289527560809?text=Halo%20wannstore%2C%20saya%20mau%20pesan%20joki%20Balapan%20Motor%20(2k%2Feach)" target="_blank" rel="noopener">Pesan</a></td>
+              <svg class="pen-circle" viewBox="0 0 100 100" preserveAspectRatio="none"><ellipse cx="50" cy="50" rx="48" ry="42"/></svg>
+            </tr>
+            <tr>
+              <td class="pt-item">Cube</td>
+              <td class="pt-price">1k<span style="font-size:13px;color:var(--ink-faint)">/ea</span></td>
+              <td class="pt-action"><a class="pt-order" href="https://wa.me/6289527560809?text=Halo%20wannstore%2C%20saya%20mau%20pesan%20joki%20Cube%20(1k%2Feach)" target="_blank" rel="noopener">Pesan</a></td>
+              <svg class="pen-circle" viewBox="0 0 100 100" preserveAspectRatio="none"><ellipse cx="50" cy="50" rx="48" ry="42"/></svg>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Character Carousel — the revolving drum -->
+      <div class="char-carousel" data-carousel data-cc-continuous>
+        <h3 class="price-group-title gal-title"><span class="pg-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 a4.2 4.2 0 1 0 0 8.4 a4.2 4.2 0 1 0 0 -8.4"/><path d="M4.5 21 a7.5 7.5 0 0 1 15 0"/></svg></span>Karakter Populer</h3>
+
+        <div class="cc-stage" role="img" aria-label="Karakter populer Wuthering Waves">
+          <span class="cc-ring" aria-hidden="true"></span>
+          <div class="cc-frame">
+            <img class="cc-slide is-active" src="assets/Jinhsi.webp" alt="Jinhsi — Wuthering Waves" loading="eager" decoding="async">
+            <img class="cc-slide" aria-hidden="true" src="assets/Changli.webp" alt="Changli — Wuthering Waves" loading="eager" decoding="async">
+            <img class="cc-slide" aria-hidden="true" src="assets/Camellya.webp" alt="Camellya — Wuthering Waves" loading="eager" decoding="async">
+            <img class="cc-slide" aria-hidden="true" src="assets/Yinlin.webp" alt="Yinlin — Wuthering Waves" loading="eager" decoding="async">
+            <img class="cc-slide" aria-hidden="true" src="assets/Jiyan.webp" alt="Jiyan — Wuthering Waves" loading="eager" decoding="async">
+            <img class="cc-slide" aria-hidden="true" src="assets/Verina.webp" alt="Verina — Wuthering Waves" loading="eager" decoding="async">
+            <img class="cc-slide" aria-hidden="true" src="assets/Encore.webp" alt="Encore — Wuthering Waves" loading="eager" decoding="async">
+            <img class="cc-slide" aria-hidden="true" src="assets/Calcharo.webp" alt="Calcharo — Wuthering Waves" loading="eager" decoding="async">
+          </div>
+          <div class="cc-plate">
+              <span class="cc-name">Jinhsi</span>
+              <span class="cc-index">01 / 08</span>
+            </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============================================
+       REVERSE 1999 — service bill
+       ============================================ -->
+  <section id="reverse-1999">
+    <div class="section-header r1999">
+      <h2 class="game-stamp">
+        <img src="assets/r1999-icon.webp" alt="">
+        Reverse 1999
+      </h2>
+      <p class="section-sub">Semua harga dalam Rupiah (IDR) — sudah termasuk biaya jasa</p>
+    </div>
+
+    <div class="price-section">
+
+      <!-- Story -->
+      <div class="price-group">
+        <h3 class="price-group-title">
+          <span class="pg-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5 a2 2 0 0 1 2 -2 h11 v18 H6 a2 2 0 0 0 -2 2 Z"/><path d="M7 7 h7 M7 11 h7"/></svg></span>
+          Story
+          <span class="pgt-count">Main story &amp; event</span>
+        </h3>
+        <table class="price-table">
+          <tbody>
+            <tr>
+              <td class="pt-item">Story <span class="pt-sub">Per chapter</span></td>
+              <td class="pt-price">10k</td>
+              <td class="pt-action"><a class="pt-order" href="https://wa.me/6289527560809?text=Halo%20wannstore%2C%20saya%20mau%20pesan%20joki%20Story%20Reverse%201999%20(10k%2Fchapter)" target="_blank" rel="noopener">Pesan</a></td>
+              <svg class="pen-circle" viewBox="0 0 100 100" preserveAspectRatio="none"><ellipse cx="50" cy="50" rx="48" ry="42"/></svg>
+            </tr>
+            <tr>
+              <td class="pt-item">Story Event</td>
+              <td class="pt-price">35k</td>
+              <td class="pt-action"><a class="pt-order" href="https://wa.me/6289527560809?text=Halo%20wannstore%2C%20saya%20mau%20pesan%20joki%20Story%20Event%20Reverse%201999%20(35k)" target="_blank" rel="noopener">Pesan</a></td>
+              <svg class="pen-circle" viewBox="0 0 100 100" preserveAspectRatio="none"><ellipse cx="50" cy="50" rx="48" ry="42"/></svg>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Reflection -->
+      <div class="price-group">
+        <h3 class="price-group-title">
+          <span class="pg-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 L20 12 L12 21 L4 12 Z"/><path d="M12 8 v8"/></svg></span>
+          Reflection
+          <span class="pgt-count">Psychube upgrade</span>
+        </h3>
+        <table class="price-table">
+          <tbody>
+            <tr>
+              <td class="pt-item">Reflection <span class="pt-sub">Per reflection</span></td>
+              <td class="pt-price">15k</td>
+              <td class="pt-action"><a class="pt-order" href="https://wa.me/6289527560809?text=Halo%20wannstore%2C%20saya%20mau%20pesan%20joki%20Reflection%20Reverse%201999%20(15k%2Fref)" target="_blank" rel="noopener">Pesan</a></td>
+              <svg class="pen-circle" viewBox="0 0 100 100" preserveAspectRatio="none"><ellipse cx="50" cy="50" rx="48" ry="42"/></svg>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Rawkun -->
+      <div class="price-group">
+        <h3 class="price-group-title">
+          <span class="pg-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7 h18 v10 H3 Z"/><circle cx="12" cy="12" r="2.6"/><path d="M6 7 v10 M18 7 v10"/></svg></span>
+          Rawkun
+          <span class="pgt-count">Paket mingguan</span>
+        </h3>
+        <table class="price-table">
+          <tbody>
+            <tr>
+              <td class="pt-item">Rawkun 1 Minggu</td>
+              <td class="pt-price">15k</td>
+              <td class="pt-action"><a class="pt-order" href="https://wa.me/6289527560809?text=Halo%20wannstore%2C%20saya%20mau%20pesan%20Rawkun%201%20minggu%20(15k)" target="_blank" rel="noopener">Pesan</a></td>
+              <svg class="pen-circle" viewBox="0 0 100 100" preserveAspectRatio="none"><ellipse cx="50" cy="50" rx="48" ry="42"/></svg>
+            </tr>
+            <tr>
+              <td class="pt-item">Rawkun 2 Minggu</td>
+              <td class="pt-price">35k</td>
+              <td class="pt-action"><a class="pt-order" href="https://wa.me/6289527560809?text=Halo%20wannstore%2C%20saya%20mau%20pesan%20Rawkun%202%20minggu%20(35k)" target="_blank" rel="noopener">Pesan</a></td>
+              <svg class="pen-circle" viewBox="0 0 100 100" preserveAspectRatio="none"><ellipse cx="50" cy="50" rx="48" ry="42"/></svg>
+            </tr>
+            <tr>
+              <td class="pt-item">Rawkun 3 Minggu</td>
+              <td class="pt-price">50k</td>
+              <td class="pt-action"><a class="pt-order" href="https://wa.me/6289527560809?text=Halo%20wannstore%2C%20saya%20mau%20pesan%20Rawkun%203%20minggu%20(50k)" target="_blank" rel="noopener">Pesan</a></td>
+              <svg class="pen-circle" viewBox="0 0 100 100" preserveAspectRatio="none"><ellipse cx="50" cy="50" rx="48" ry="42"/></svg>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Riveries -->
+      <div class="price-group">
+        <h3 class="price-group-title">
+          <span class="pg-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 C7 9 5 12 5 15 a7 7 0 0 0 14 0 c0 -3 -2 -6 -7 -12 Z"/></svg></span>
+          Riveries
+          <span class="pgt-count">Currency</span>
+        </h3>
+        <table class="price-table">
+          <tbody>
+            <tr>
+              <td class="pt-item">500M Riveries</td>
+              <td class="pt-price">20k</td>
+              <td class="pt-action"><a class="pt-order" href="https://wa.me/6289527560809?text=Halo%20wannstore%2C%20saya%20mau%20pesan%20500M%20Riveries%20(20k)" target="_blank" rel="noopener">Pesan</a></td>
+              <svg class="pen-circle" viewBox="0 0 100 100" preserveAspectRatio="none"><ellipse cx="50" cy="50" rx="48" ry="42"/></svg>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Character Carousel — the revolving drum -->
+      <div class="char-carousel" data-carousel data-cc-continuous>
+        <h3 class="price-group-title gal-title"><span class="pg-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 a4.2 4.2 0 1 0 0 8.4 a4.2 4.2 0 1 0 0 -8.4"/><path d="M4.5 21 a7.5 7.5 0 0 1 15 0"/></svg></span>Karakter Populer</h3>
+
+        <div class="cc-stage cc-stage-tall" role="img" aria-label="Karakter populer Reverse 1999">
+          <span class="cc-ring" aria-hidden="true"></span>
+          <div class="cc-frame">
+            <img class="cc-slide is-active" src="assets/Sonetto.webp" alt="Sonetto — Reverse 1999" loading="eager" decoding="async">
+            <img class="cc-slide" aria-hidden="true" src="assets/Regulus.webp" alt="Regulus — Reverse 1999" loading="eager" decoding="async">
+            <img class="cc-slide" aria-hidden="true" src="assets/Jessica.webp" alt="Jessica — Reverse 1999" loading="eager" decoding="async">
+            <img class="cc-slide" aria-hidden="true" src="assets/Tooth_Fairy.webp" alt="Tooth Fairy — Reverse 1999" loading="eager" decoding="async">
+            <img class="cc-slide" aria-hidden="true" src="assets/Melania.webp" alt="Melania — Reverse 1999" loading="eager" decoding="async">
+            <img class="cc-slide" aria-hidden="true" src="assets/Voyager.webp" alt="Voyager — Reverse 1999" loading="eager" decoding="async">
+            <img class="cc-slide" aria-hidden="true" src="assets/Schneider.webp" alt="Schneider — Reverse 1999" loading="eager" decoding="async">
+          </div>
+          <div class="cc-plate">
+              <span class="cc-name">Sonetto</span>
+              <span class="cc-index">01 / 07</span>
+            </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============================================
+       CUSTOM ORDER
+       ============================================ -->
+  <div class="custom-order">
+    <h3>Terima Custom Order</h3>
+    <p>Butuh sesuatu yang tidak ada di daftar? Chat kami, kita sesuaikan.</p>
+    <a class="order-stub" href="https://wa.me/6289527560809?text=Halo%20wannstore%2C%20saya%20mau%20custom%20order" target="_blank" rel="noopener">
+      <svg class="wa-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+      CHAT CUSTOM ORDER
+    </a>
+  </div>
+
+  <!-- ============================================
+       FOOTER
+       ============================================ -->
+  <footer class="footer">
+    <div class="footer-brand">wannstore</div>
+    <div class="footer-line">Joki game terpercaya — Wuthering Waves &amp; Reverse 1999</div>
+    <div class="footer-line">
+      WhatsApp: <a href="https://wa.me/6289527560809" style="color:var(--ink-faint)">+62 895-2756-0809</a>
+      &nbsp;·&nbsp;
+      TikTok: <a href="https://tiktok.com/@wannsomeone" style="color:var(--ink-faint)">@wannsomeone</a>
+    </div>
+  </footer>
+
+</div>
+
+<!-- Floating order sticker — the decal pasted on the sheet -->
+<div class="ayo" id="ayo" role="complementary" aria-label="Ayo order">
+  <a class="ayo-order" href="https://wa.me/6289527560809?text=Halo%20wannstore%2C%20saya%20mau%20pesan" target="_blank" rel="noopener" aria-label="Ayo order via WhatsApp">
+    <img src="assets/ayo-order.png" alt="Ayo order!" width="512" height="609">
+  </a>
+  <button class="ayo-x" type="button" id="ayo-close" aria-label="Tutup">&times;</button>
+</div>
+
+<script>
+(function () {
+  'use strict';
+
+  var reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var canHover = window.matchMedia('(hover: hover)').matches;
+
+  /* ---- Pen-circle persistence on tap (touch devices) ---- */
+  document.querySelectorAll('.price-table tr').forEach(function (tr) {
+    tr.addEventListener('click', function () {
+      if (canHover) return;
+      var wasCircled = tr.classList.contains('circled');
+      document.querySelectorAll('.price-table tr.circled').forEach(function (r) {
+        r.classList.remove('circled');
+      });
+      if (!wasCircled) tr.classList.add('circled');
+    });
+  });
+
+  /* ---- The sheet prints itself ----
+     Elements are visible by default; we opt them into the reveal only
+     when motion is welcome and the observer is available. */
+  if (reduced || !('IntersectionObserver' in window)) return;
+
+  var targets = [];
+
+  // Game stamps press down
+  document.querySelectorAll('.game-stamp').forEach(function (el) {
+    el.classList.add('stamp-press');
+    targets.push(el);
+  });
+
+  // Price rows ink in, staggered within their table
+  document.querySelectorAll('.price-table').forEach(function (table) {
+    table.querySelectorAll('tr').forEach(function (tr, i) {
+      tr.classList.add('ink-in');
+      tr.style.setProperty('--ink-delay', Math.min(i, 10) * 45 + 'ms');
+      targets.push(tr);
+    });
+  });
+
+  // Category headings ink in
+  document.querySelectorAll('.price-group-title').forEach(function (el) {
+    el.classList.add('ink-in');
+    targets.push(el);
+  });
+
+  // Gallery frames ink in, staggered
+  document.querySelectorAll('.char-grid img').forEach(function (el, i) {
+    el.classList.add('ink-in');
+    el.style.setProperty('--ink-delay', (i % 4) * 60 + 'ms');
+    targets.push(el);
+  });
+
+  // Closing banner
+  document.querySelectorAll('.custom-order').forEach(function (el) {
+    el.classList.add('ink-in');
+    targets.push(el);
+  });
+
+  function print(el) {
+    if (el.classList.contains('is-printed')) return;
+    el.classList.add('is-printed');
+    io.unobserve(el);
+  }
+
+  var io = new IntersectionObserver(function (entries) {
+    entries.forEach(function (entry) {
+      // Print when in view OR when the reader has already scrolled past it.
+      // Without the second test, fast scrolling leaves an element hidden forever.
+      if (entry.isIntersecting || entry.boundingClientRect.top < window.innerHeight) {
+        print(entry.target);
+      }
+    });
+  }, { threshold: 0.08, rootMargin: '0px 0px -4% 0px' });
+
+  targets.forEach(function (el) { io.observe(el); });
+
+  // Safety sweep. IntersectionObserver fires no callback when an element jumps
+  // from below the viewport to above it without a threshold crossing, so a fast
+  // scroll can strand an element hidden. Sweep on scroll (rAF-throttled) and
+  // print anything at or above the fold.
+  var pending = targets.slice();
+  var ticking = false;
+
+  function sweep() {
+    ticking = false;
+    if (!pending.length) return;
+    var vh = window.innerHeight;
+    var still = [];
+    for (var i = 0; i < pending.length; i++) {
+      var el = pending[i];
+      if (el.classList.contains('is-printed')) continue;
+      if (el.getBoundingClientRect().top < vh) {
+        print(el);
+      } else {
+        still.push(el);
+      }
+    }
+    pending = still;
+  }
+
+  function onScroll() {
+    if (ticking) return;
+    ticking = true;
+    requestAnimationFrame(sweep);
+  }
+
+  window.addEventListener('scroll', onScroll, { passive: true });
+  window.addEventListener('resize', onScroll, { passive: true });
+  window.addEventListener('load', function () { setTimeout(sweep, 60); });
+  setTimeout(sweep, 300);
+
+  // Failsafe: a bill is a document, never a trap. If anything is still hidden
+  // after 8s — headless capture, an odd viewport, a stalled observer — print it.
+  setTimeout(function () {
+    targets.forEach(print);
+    pending = [];
+  }, 8000);
+
+  /* ---- Character carousel: the revolving drum ----
+     Turns on its own, forever, at a steady cadence. No controls: the
+     drum is a display, not a widget. It never pauses on hover — the
+     motion is the point. Only a hidden tab stops the timer. */
+  document.querySelectorAll('[data-carousel]').forEach(function (root) {
+    var slides = Array.prototype.slice.call(root.querySelectorAll('.cc-slide'));
+    var nameEl = root.querySelector('.cc-name');
+    var idxEl  = root.querySelector('.cc-index');
+    var n = slides.length;
+    if (!n) return;
+
+    var pad = function (i) { return (i < 9 ? '0' : '') + (i + 1); };
+    var labels = slides.map(function (s) {
+      return (s.getAttribute('alt') || '').split('\u2014')[0].trim();
+    });
+
+    var cur = 0;
+    var timer = null;
+    var DELAY = 3200;
+
+    function render(next) {
+      var prev = cur;
+      cur = ((next % n) + n) % n;
+
+      slides.forEach(function (s, i) {
+        var on = i === cur;
+        s.classList.toggle('is-active', on);
+        s.classList.toggle('is-behind', i === prev && i !== cur);
+        if (on) { s.removeAttribute('aria-hidden'); }
+        else { s.setAttribute('aria-hidden', 'true'); }
+      });
+      if (nameEl) nameEl.textContent = labels[cur];
+      if (idxEl) idxEl.textContent = pad(cur) + ' / ' + pad(n - 1);
+    }
+
+    function tick() { render(cur + 1); }
+
+    function start() {
+      if (reduced || timer) return;
+      timer = setInterval(tick, DELAY);
+    }
+    function halt() { if (timer) { clearInterval(timer); timer = null; } }
+
+    // Keep the counter honest and start the drum.
+    render(0);
+
+    // A drum that never stops would be a problem for a hidden tab, so the
+    // timer only runs while the page is visible. Nothing else interrupts it.
+    document.addEventListener('visibilitychange', function () {
+      if (document.hidden) halt(); else start();
+    });
+    if (!document.hidden) start();
+  });
+
+  /* ---- Floating order sticker ----
+     Press to order (leaves upward), or close (leaves downward). Closing
+     is session-only: a refreshed page pastes the sticker back. */
+  (function () {
+    var sticker = document.getElementById('ayo');
+    var closer  = document.getElementById('ayo-close');
+    if (!sticker) return;
+
+    function dismiss(cls) {
+      sticker.classList.add(cls);
+      sticker.addEventListener('animationend', function () {
+        sticker.classList.add('is-gone');
+      }, { once: true });
+    }
+
+    var orderLink = sticker.querySelector('.ayo-order');
+    if (orderLink) {
+      // Let the link open natively — a deferred window.open would be
+      // popup-blocked. The sticker just animates away in this tab.
+      orderLink.addEventListener('click', function () {
+        dismiss('is-opening');
+      });
+    }
+
+    if (closer) {
+      closer.addEventListener('click', function (e) {
+        e.preventDefault();
+        e.stopPropagation();
+        dismiss('is-closing');
+      });
+    }
+  })();
+})();
+</script>
+
+</body>
+</html>

@@ -1,0 +1,15 @@
+# internal tooling state
+.impeccable/
+
+# sibling projects (published as their own repos)
+quizzo/
+tango/
+
+# editor / os / logs
+.DS_Store
+Thumbs.db
+*.log
+*.tmp
+*.bak
+*.swp
+node_modules/

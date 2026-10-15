@@ -1,0 +1,3 @@
+advisors:
+  - name: default
+    model: new-provider/bansos/step-5-preview
